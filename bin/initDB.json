@@ -26,7 +26,7 @@
 	"maxPoints": 1500,
 	"battlegroupMax": 5
 }, {
-	"_class": "de.mlo.model.LightShip",
+	"_class": "de.mlo.model.Ship",
 	"name": "Generic UCM LightShip",
 	"scan": 6,
 	"sig": 1,
@@ -49,7 +49,7 @@
 	"superHeavyShipSize": 0,
 	"maxShips": 15
 }, {
-	"_class": "de.mlo.model.LightShip",
+	"_class": "de.mlo.model.Ship",
 	"name": "Generic PHR LightShip",
 	"scan": 6,
 	"sig": 1,
@@ -64,7 +64,7 @@
 	"factionLogoURL":"phr_25.jpg"
 	
 }, {
-	"_class": "de.mlo.model.MediumShip",
+	"_class": "de.mlo.model.Ship",
 	"name": "Generic PHR MediumShip",
 	"scan": 6,
 	"sig": 1,
@@ -79,7 +79,7 @@
 	"factionLogoURL":"phr_25.jpg"
 	
 }, {
-	"_class": "de.mlo.model.HeavyShip",
+	"_class": "de.mlo.model.Ship",
 	"name": "Generic Shaltari HeavyShip",
 	"scan": 6,
 	"sig": 1,
@@ -94,7 +94,7 @@
 	"factionLogoURL":"shaltari_25.jpg"
 	
 }, {
-	"_class": "de.mlo.model.SuperHeavyShip",
+	"_class": "de.mlo.model.Ship",
 	"name": "Generic UCM SuperHeavyShip",
 	"scan": 6,
 	"sig": 1,
@@ -109,7 +109,7 @@
 	"factionLogoURL":"ucm_25.jpg"
 	
 }, {
-	"_class": "de.mlo.model.LightShip",
+	"_class": "de.mlo.model.Ship",
 	"name": "Generic Scourge LightShip",
 	"scan": 6,
 	"sig": 1,

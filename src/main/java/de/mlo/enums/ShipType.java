@@ -6,7 +6,7 @@ public enum ShipType {
 	LIGHTSHIP("shiptype.light"),
 	MEDIUMSHIP("shiptype.medium"),
 	HEAVYSHIP("shiptype.heavy"),
-	SUPERHEAVYSHIP("shiptype.superheavy");
+	SUPERSHIP("shiptype.super");
 
  
 	@Getter

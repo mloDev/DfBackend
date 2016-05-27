@@ -10,8 +10,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 import de.mlo.enums.Faction;
+import de.mlo.enums.ShipType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -90,6 +92,11 @@ public class Ship {
 	@Getter
 	@Setter
 	private List<Weapon> weapons; 
+	
+	@Enumerated(EnumType.STRING)
+	@Getter
+	@Setter
+	private ShipType shipType;
 	
 	@Column
 	@Getter

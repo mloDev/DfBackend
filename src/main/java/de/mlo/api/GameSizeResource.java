@@ -15,7 +15,7 @@ public class GameSizeResource {
 	@Autowired
 	GameSizeRepository gameSizeRepo;
 	
-	@RequestMapping("/api/gamesize")
+	@RequestMapping("/api/gameSizes")
 	public List<GameSize> resource() {
 		return gameSizeRepo.findAll();
 	}

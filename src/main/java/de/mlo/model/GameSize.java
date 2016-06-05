@@ -47,7 +47,32 @@ public class GameSize {
 	@Column
 	@Getter
 	@Setter
+	private int pathfinderMin;
+	
+	@Column
+	@Getter
+	@Setter
+	private int lineMin;
+	
+	@Column
+	@Getter
+	@Setter
+	private int vanguardMin;
+	
+	@Column
+	@Getter
+	@Setter
+	private int flagMin;
+	
+	@Column
+	@Getter
+	@Setter
 	private int battlegroupMax;
+	
+	@Column
+	@Getter
+	@Setter
+	private int battlegroupMin;
 	
 	@Column
 	@Getter

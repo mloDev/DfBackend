@@ -2,15 +2,14 @@ package de.mlo.model;
 
 import java.util.List;
 
-import javax.persistence.Column;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -23,18 +22,14 @@ public class Battlegroupe {
 	@Getter
 	@Setter
 	private int id;
-	
-	@Column
+
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinTable(name = "battlegrouptype_id")
 	@Getter
 	@Setter
-	private String name;
+	private BattleGroupeType battleGroupeType;
 	
-	@Column
-	@Getter
-	@Setter
-	private int maxShips;
-	
-    @OneToMany(fetch = FetchType.EAGER)
+/*    @OneToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "battlegroup_id")
 	@Getter
 	@Setter
@@ -56,27 +51,6 @@ public class Battlegroupe {
     @JoinTable(name = "battlegroup_id")
 	@Getter
 	@Setter
-	private List<SuperHeavyShip> superHeavyShip;
-	
-	@Column
-	@Getter
-	@Setter
-	int lightShipSize;
-	
-	@Column
-	@Getter
-	@Setter
-	int mediumShipSize;
-	
-	@Column
-	@Getter
-	@Setter
-	int heavyShipSize;
-	
-	@Column
-	@Getter
-	@Setter
-	int superHeavyShipSize;
-
+	private List<SuperHeavyShip> superHeavyShip;*/
 
 }

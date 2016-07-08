@@ -1,5 +1,6 @@
 package de.mlo.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -7,7 +8,9 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
@@ -23,34 +26,34 @@ public class Battlegroupe {
 	@Setter
 	private int id;
 
-	@OneToOne(cascade = CascadeType.ALL)
+	@OneToOne
 	@JoinTable(name = "battlegrouptype_id")
 	@Getter
 	@Setter
 	private BattleGroupeType battleGroupeType;
 	
-/*    @OneToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "battlegroup_id")
+    @ManyToMany
+    @JoinTable(name = "battlegroup_lights")
 	@Getter
 	@Setter
-	private List<LightShip> lightShip;
+	private List<Ship> lightShips = new ArrayList<>();
 	
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "battlegroup_id")
+    @ManyToMany
+    @JoinTable(name = "battlegroup_mediums")
 	@Getter
 	@Setter
-	private List<MediumShip> mediumShip;
+	private List<Ship> mediumShips;
 	
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "battlegroup_id")
+    @ManyToMany
+    @JoinTable(name = "battlegroup_heavies")
 	@Getter
 	@Setter
-	private List<HeavyShip> heavyShip;
+	private List<Ship> heavyShips;
 	
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "battlegroup_id")
+    @ManyToMany
+    @JoinTable(name = "battlegroup_superHeavies")
 	@Getter
 	@Setter
-	private List<SuperHeavyShip> superHeavyShip;*/
+	private List<Ship> superHeavyShips;
 
 }

@@ -1,6 +1,15 @@
-[{
-	"_class": "de.mlo.model.Battlegroupe",
-	"battleGroupeType": {
+[{		"_class": "de.mlo.model.BattleGroupeType",
+		"battleType": "FLAG",
+		"mediumShipSize": 0,
+		"lightShipSize": 1,
+		"heavyShipSize": 0,
+		"superHeavyShipSize": 2,
+		"mediumShipMin": 0,
+		"lightShipMin": 0,
+		"heavyShipMin": 0,
+		"superHeavyShipMin": 1,
+		"maxShips": 2
+}, {
 		"_class": "de.mlo.model.BattleGroupeType",
 		"battleType": "LINE",
 		"mediumShipSize": 3,
@@ -12,40 +21,7 @@
 		"heavyShipMin": 0,
 		"superHeavyShipMin": 0,
 		"maxShips": 3
-	}
 }, {
-	"_class": "de.mlo.model.Battlegroupe",
-	"battleGroupeType": {
-		"_class": "de.mlo.model.BattleGroupeType",
-		"battleType": "FLAG",
-		"mediumShipSize": 0,
-		"lightShipSize": 1,
-		"heavyShipSize": 0,
-		"superHeavyShipSize": 2,
-		"mediumShipMin": 0,
-		"lightShipMin": 0,
-		"heavyShipMin": 0,
-		"superHeavyShipMin": 1,
-		"maxShips": 2
-	}
-}, {
-	"_class": "de.mlo.model.Battlegroupe",
-	"battleGroupeType": {
-		"_class": "de.mlo.model.BattleGroupeType",
-		"battleType": "VANGUARD",
-		"mediumShipSize": 1,
-		"lightShipSize": 1,
-		"heavyShipSize": 2,
-		"superHeavyShipSize": 0,
-		"mediumShipMin": 0,
-		"lightShipMin": 0,
-		"heavyShipMin": 1,
-		"superHeavyShipMin": 0,
-		"maxShips": 3
-	}
-}, {
-	"_class": "de.mlo.model.Battlegroupe",
-	"battleGroupeType": {
 		"_class": "de.mlo.model.BattleGroupeType",
 		"battleType": "PATHFINDER",
 		"mediumShipSize": 1,
@@ -57,7 +33,18 @@
 		"heavyShipMin": 0,
 		"superHeavyShipMin": 0,
 		"maxShips": 3
-	}
+}, {
+		"_class": "de.mlo.model.BattleGroupeType",
+		"battleType": "VANGUARD",
+		"mediumShipSize": 1,
+		"lightShipSize": 1,
+		"heavyShipSize": 2,
+		"superHeavyShipSize": 0,
+		"mediumShipMin": 0,
+		"lightShipMin": 0,
+		"heavyShipMin": 1,
+		"superHeavyShipMin": 0,
+		"maxShips": 3
 }, {
 	"_class": "de.mlo.model.GameSize",
 	"name": "Battle",

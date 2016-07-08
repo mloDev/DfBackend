@@ -43,65 +43,65 @@ public class Fleet {
 	@Setter
 	private GameSize gameSize;
 	
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "fleet")
+	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<FlagBattlegroupe> flagBattlegroupes;
+	private List<Battlegroupe> flagBattlegroupes;
 	
-	public void addFlagGroupe(FlagBattlegroupe flagGroupe) {
-		if (flagGroupe != null) {
-			if (flagBattlegroupes == null) {
-				flagBattlegroupes = new ArrayList<FlagBattlegroupe>();          
-		    }
-		    flagBattlegroupes.add(flagGroupe);
-		    flagGroupe.setFleet(this);
-		 }
-	}
+//	public void addFlagGroupe(FlagBattlegroupe flagGroupe) {
+//		if (flagGroupe != null) {
+//			if (flagBattlegroupes == null) {
+//				flagBattlegroupes = new ArrayList<FlagBattlegroupe>();          
+//		    }
+//		    flagBattlegroupes.add(flagGroupe);
+//		    flagGroupe.setFleet(this);
+//		 }
+//	}
 	
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "fleet")
+	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<VanguardBattlegroupe> vanguardBattlegroupes;
+	private List<Battlegroupe> vanguardBattlegroupes;
 	
-	public void addVanguardGroupe(VanguardBattlegroupe vanguardGroupe) {
-		if (vanguardGroupe != null) {
-			if (vanguardBattlegroupes == null) {
-				vanguardBattlegroupes = new ArrayList<VanguardBattlegroupe>();          
-		    }
-			vanguardBattlegroupes.add(vanguardGroupe);
-			vanguardGroupe.setFleet(this);
-		 }
-	}
+//	public void addVanguardGroupe(VanguardBattlegroupe vanguardGroupe) {
+//		if (vanguardGroupe != null) {
+//			if (vanguardBattlegroupes == null) {
+//				vanguardBattlegroupes = new ArrayList<VanguardBattlegroupe>();          
+//		    }
+//			vanguardBattlegroupes.add(vanguardGroupe);
+//			vanguardGroupe.setFleet(this);
+//		 }
+//	}
 	
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "fleet")
+	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<LineBattlegroupe> lineBattlegroupes;
+	private List<Battlegroupe> lineBattlegroupes;
 	
-	public void addLineGroupe(LineBattlegroupe lineGroupe) {
-		if (lineGroupe != null) {
-			if (lineBattlegroupes == null) {
-				lineBattlegroupes = new ArrayList<LineBattlegroupe>();          
-		    }
-			lineBattlegroupes.add(lineGroupe);
-			lineGroupe.setFleet(this);
-		 }
-	}
+//	public void addLineGroupe(LineBattlegroupe lineGroupe) {
+//		if (lineGroupe != null) {
+//			if (lineBattlegroupes == null) {
+//				lineBattlegroupes = new ArrayList<LineBattlegroupe>();          
+//		    }
+//			lineBattlegroupes.add(lineGroupe);
+//			lineGroupe.setFleet(this);
+//		 }
+//	}
 	
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "fleet")
+	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<PathfinderBattlegroupe> pathfinderBattlegroupes;
+	private List<Battlegroupe> pathfinderBattlegroupes;
 	
-	public void addPathfinderGroupe(PathfinderBattlegroupe pathfinderGroupe) {
-		if (pathfinderGroupe != null) {
-			if (pathfinderBattlegroupes == null) {
-				pathfinderBattlegroupes = new ArrayList<PathfinderBattlegroupe>();          
-		    }
-			pathfinderBattlegroupes.add(pathfinderGroupe);
-			pathfinderGroupe.setFleet(this);
-		 }
-	}
+//	public void addPathfinderGroupe(PathfinderBattlegroupe pathfinderGroupe) {
+//		if (pathfinderGroupe != null) {
+//			if (pathfinderBattlegroupes == null) {
+//				pathfinderBattlegroupes = new ArrayList<PathfinderBattlegroupe>();          
+//		    }
+//			pathfinderBattlegroupes.add(pathfinderGroupe);
+//			pathfinderGroupe.setFleet(this);
+//		 }
+//	}
 
 	
 }

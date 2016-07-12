@@ -102,6 +102,38 @@
 	
 }, {
 	"_class": "de.mlo.model.Ship",
+	"name": "Generic MediumShip I",
+	"scan": 6,
+	"sig": 1,
+	"thrust": 2,
+	"hull": 0,
+	"a": 1500,
+	"pd": 5,
+	"g":"1-4",
+	"t":"L",
+	"faction":"UCM",
+	"pts":125,
+	"factionLogoURL":"ucm_25.jpg",
+	"shipType": "MEDIUMSHIP"
+	
+}, {
+	"_class": "de.mlo.model.Ship",
+	"name": "Generic HeavyShip I",
+	"scan": 6,
+	"sig": 1,
+	"thrust": 2,
+	"hull": 0,
+	"a": 1500,
+	"pd": 5,
+	"g":"1-4",
+	"t":"L",
+	"faction":"UCM",
+	"pts":125,
+	"factionLogoURL":"ucm_25.jpg",
+	"shipType": "HEAVYSHIP"
+	
+}, {
+	"_class": "de.mlo.model.Ship",
 	"name": "Generic LightShip II",
 	"scan": 6,
 	"sig": 1,

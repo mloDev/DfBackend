@@ -39,7 +39,7 @@ public class Ship {
 	@Column
 	@Getter
 	@Setter
-	private int sig;
+	private String sig;
 	
 	@Column
 	@Getter
@@ -54,7 +54,7 @@ public class Ship {
 	@Column
 	@Getter
 	@Setter
-	private int a;
+	private String a;
 	
 	@Column
 	@Getter
@@ -64,7 +64,12 @@ public class Ship {
 	@Column
 	@Getter
 	@Setter
-	private String g;
+	private int gmin;
+	
+	@Column
+	@Getter
+	@Setter
+	private int gmax;
 	
 	@Column
 	@Getter

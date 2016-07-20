@@ -35,7 +35,7 @@ public class Load {
 	private int launch;
 	
     @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "load_id")
+    @JoinTable(name = "load_specials")
 	@Getter
 	@Setter
 	private List<Special> specials;

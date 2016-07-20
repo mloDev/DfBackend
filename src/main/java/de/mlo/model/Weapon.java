@@ -2,13 +2,17 @@ package de.mlo.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -35,21 +39,20 @@ public class Weapon {
 	@Column
 	@Getter
 	@Setter
-	private int attack;
+	private String attack;
 	
 	@Column
 	@Getter
 	@Setter
 	private int damage;
 	
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "weapon_id")
+    @Column
 	@Getter
 	@Setter
-	private List<Arc> arcs;
+	private String arc;
 	
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "weapon_id")
+    @ManyToMany
+    @JoinTable(name = "weapon_specials")
     @Getter
     @Setter
 	private List<Special> specials;

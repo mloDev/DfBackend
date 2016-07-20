@@ -9,6 +9,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
@@ -76,10 +77,11 @@ public class Ship {
 	@Setter
 	private String t;
 	
-	@Column
+	@ManyToMany
+	@JoinTable(name = "ship_specials")
 	@Getter
 	@Setter
-	private String special;
+	private List<Special> specials;
 	
 	@Enumerated(EnumType.STRING)
 	@Column
@@ -92,11 +94,17 @@ public class Ship {
 	@Setter
 	private int pts;
 	
-	@OneToMany
-	@JoinTable(name = "ship_id")
+	@ManyToMany
+	@JoinTable(name = "ship_weapons")
 	@Getter
 	@Setter
 	private List<Weapon> weapons; 
+	
+	@ManyToMany
+	@JoinTable(name = "ship_loads")
+	@Getter
+	@Setter
+	private List<Load> loads; 
 	
 	@Enumerated(EnumType.STRING)
 	@Getter

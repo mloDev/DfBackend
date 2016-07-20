@@ -13031,3 +13031,36 @@ Caused by: org.h2.jdbc.JdbcSQLException: Die Datenbank-Verbindung wurde nicht ex
 The connection was not closed by the application and is garbage collected [90018-190]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
 	... 232 more
+2016-07-20 09:36:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (WEAPON: ID INTEGER DEFAULT (NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_70FE4FBB_AFD3_4B33_94A3_9F4542BE4F2B) NOT NULL NULL_TO_DEFAULT SEQUENCE PUBLIC.SYSTEM_SEQUENCE_70FE4FBB_AFD3_4B33_94A3_9F4542BE4F2B)"; SQL statement:
+INSERT INTO "PUBLIC"."WEAPON"("ID","ATTACK","DAMAGE","LOCK","NAME")VALUES(?,?,?,?,?) -- (?1, ?2, ?3, ?4, ?5) [22018-190]
+2016-07-20 09:36:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (WEAPON: ID INTEGER DEFAULT (NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_70FE4FBB_AFD3_4B33_94A3_9F4542BE4F2B) NOT NULL NULL_TO_DEFAULT SEQUENCE PUBLIC.SYSTEM_SEQUENCE_70FE4FBB_AFD3_4B33_94A3_9F4542BE4F2B)"; SQL statement:
+INSERT INTO "PUBLIC"."WEAPON"("ID","ATTACK","DAMAGE","LOCK","NAME")VALUES(?,?,?,?,?) -- (?1, ?2, ?3, ?4, ?5) [22018-190]
+2016-07-20 09:37:11 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (SPECIAL: LOAD_ID INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."SPECIAL"("ID","NAME","WEAPON_ID","LOAD_ID")VALUES(?,?,?,?) -- (?1, ?2, ?3, ?4) [22018-190]
+2016-07-20 09:37:11 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (SPECIAL: LOAD_ID INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."SPECIAL"("ID","NAME","WEAPON_ID","LOAD_ID")VALUES(?,?,?,?) -- (?1, ?2, ?3, ?4) [22018-190]
+2016-07-20 09:47:08 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (SPECIAL: WEAPON_ID INTEGER NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."SPECIAL"("ID","NAME","WEAPON_ID","LOAD_ID")VALUES(?,?,?,?) -- (?1, ?2, ?3, ?4) [22018-190]
+2016-07-20 09:47:08 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (SPECIAL: WEAPON_ID INTEGER NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."SPECIAL"("ID","NAME","WEAPON_ID","LOAD_ID")VALUES(?,?,?,?) -- (?1, ?2, ?3, ?4) [22018-190]
+2016-07-20 09:48:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (SPECIAL: WEAPON_ID INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."SPECIAL"("ID","NAME","WEAPON_ID","LOAD_ID")VALUES(?,?,?,?) -- (?1, ?2, ?3, ?4) [22018-190]
+2016-07-20 09:48:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (SPECIAL: WEAPON_ID INTEGER)"; SQL statement:
+INSERT INTO "PUBLIC"."SPECIAL"("ID","NAME","WEAPON_ID","LOAD_ID")VALUES(?,?,?,?) -- (?1, ?2, ?3, ?4) [22018-190]
+2016-07-20 10:00:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO SHIP_LOADS ('SHIP_ID'[*], ''LOADS_ID) VALUES (1, 1)"; expected "identifier"; SQL statement:
+INSERT INTO SHIP_LOADS ('SHIP_ID', ''LOADS_ID) VALUES (1, 1) [42001-190]
+2016-07-20 10:01:29 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO SHIP_LOADS ('SHIP_ID'[*], 'LOADS_ID') VALUES (1, 1)"; expected "identifier"; SQL statement:
+INSERT INTO SHIP_LOADS ('SHIP_ID', 'LOADS_ID') VALUES (1, 1) [42001-190]
+2016-07-20 11:29:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO SHIP_WEAPONS (1[*],1)"; expected "identifier"; SQL statement:
+INSERT INTO SHIP_WEAPONS (1,1) [42001-190]

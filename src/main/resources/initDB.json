@@ -1,4 +1,360 @@
-[{		"_class": "de.mlo.model.BattleGroupeType",
+[ {
+   "_class": "de.mlo.model.Special",
+   "@id": 1,
+   "name": "AEGIS(5)"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 2,
+   "name": "CLOSE ACTION"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 3,
+   "name": "DETECTOR"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 4,
+   "name": "RARE"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 5,
+   "name": "ATMOSPHERIC"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 6,
+   "name": "LAUNCH"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 7,
+   "name": "OPEN"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 8,
+   "name": "BURNTHROUGH (6)"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 9,
+   "name": "FLASH"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 10,
+   "name": "BOMBARDMENT"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 11,
+   "name": "BLOOM"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 12,
+   "name": "SCALD"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 13,
+   "name": "EV WEAPON*"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 14,
+   "name": "BURNTHROUGH (3)"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 15,
+   "name": "ALT-1"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 16,
+   "name": "STEAHL"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 17,
+   "name": "PARTIAL CLOAK"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 18,
+   "name": "CLOAK"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 19,
+   "name": "LINKED-1"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 20,
+   "name": "ADVANCED ECM SUITE"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 21,
+   "name": "CALIBRE (L)"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 22,
+   "name": "LINKED-2"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 23,
+   "name": "CALIBRE (H&S)"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 24,
+   "name": "ORBITAL"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 25,
+   "name": "CRIPPLING"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 26,
+   "name": "VOIDGATE-1"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 27,
+   "name": "AIR TO AIR"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 28,
+   "name": "PARTICLE"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 29,
+   "name": "SHIELD BOOSTER"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 30,
+   "name": "VECTORED"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 31,
+   "name": "IMPEL-2"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 32,
+   "name": "CLOSE ACTION (BEAM)"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 33,
+   "name": "GATEWAY NEXUS"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 34,
+   "name": "L(1)"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 35,
+   "name": "L2"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 36,
+   "name": "CORRUPTOR"
+ },
+ {
+   "_class": "de.mlo.model.Special",
+   "@id": 37,
+   "name": "L(2)"
+ },  {	
+	"_class": "de.mlo.model.Load",
+	"@id": 1,
+	"name": "Torpedo",
+	"launch": 1,
+	"specials": [
+		{
+			"id": 37
+		}
+	]
+}, {	
+	"_class": "de.mlo.model.Load",
+	"@id": 2,
+	"name": "FIGHTERS AND BOMBERS",
+	"launch": 6,
+	"specials": [
+	]
+}, {	
+	"_class": "de.mlo.model.Load",
+	"@id": 3,
+	"name": "FIGHTERS AND BOMBERS",
+	"launch": 4,
+	"specials": [
+	]
+}, {	
+	"_class": "de.mlo.model.Load",
+	"@id": 4,
+	"name": "BULK LANDER",
+	"launch": 4,
+	"specials": [
+	]
+}, {	
+	"_class": "de.mlo.model.Load",
+	"@id": 5,
+	"name": "DROPSHIP",
+	"launch": 1,
+	"specials": [
+	]
+},{
+   "_class": "de.mlo.model.Weapon",
+   "name": "Light mass driver turret",
+   "lock": 4,
+   "attack": "1",
+   "damage": 1,
+   "arc": "F/S"
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Barracuda missile bays",
+   "lock": 4,
+   "attack": "2",
+   "damage": 1,
+   "arc": "F/S/R",
+   "specials": [{	
+		"id": 2
+	}]
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Piranha missel turrets",
+   "lock": 4,
+   "attack": "D6+4",
+   "damage": 1,
+   "arc": "F/S/R",   
+   "specials": [{	
+		"id": 2
+	}]
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Heavy mass driver turret",
+   "lock": 3,
+   "attack": "4",
+   "damage": 1,
+   "arc": "F/S"
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Cobra heavy laser",
+   "lock": 3,
+   "attack": "2",
+   "damage": 1,
+   "arc": "F(N)",
+   "specials":[{"id": 8},{"id": 9}]
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Medium mass driver turret",
+   "lock": 4,
+   "attack": "2",
+   "damage": 1,
+   "arc": "F/S(L)"
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Medium mass driver turret",
+   "lock": 4,
+   "attack": "2",
+   "damage": 1,
+   "arc": "F/S(R)"
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Shark missel bays",
+   "lock": 4,
+   "attack": "D6+1",
+   "damage": 1,
+   "arc": "F/S/R",   
+   "specials": [{	
+		"id": 2
+	}]
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Bombard turrets",
+   "lock": 2,
+   "attack": "3",
+   "damage": 1,
+   "arc": "F/S/R",
+   "specials":[{"id": 10}]
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Viper super-heavy laser",
+   "lock": 3,
+   "attack": "4",
+   "damage": 1,
+   "arc": "F(N)",
+   "specials":[{"id": 8},{"id": 9}, {"id": 11}]
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Swordfish missel bays",
+   "lock": 3,
+   "attack": "D6+4",
+   "damage": 1,
+   "arc": "F/S/R",
+   "specials": [{	
+		"id": 2
+	}]
+ }, 
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Medium mass driver turret",
+   "lock": 4,
+   "attack": "4",
+   "damage": 1,
+   "arc": "F/S(L)"
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Medium mass driver turret",
+   "lock": 4,
+   "attack": "4",
+   "damage": 1,
+   "arc": "F/S(R)"
+ },
+ {
+   "_class": "de.mlo.model.Weapon",
+   "name": "Heavy mass driver turret",
+   "lock": 3,
+   "attack": "6",
+   "damage": 1,
+   "arc": "F/S"
+ },{
+   "_class": "de.mlo.model.Weapon",
+   "name": "Light mass driver turret",
+   "lock": 4,
+   "attack": "4",
+   "damage": 1,
+   "arc": "F/S"
+ },
+ {	"_class": "de.mlo.model.BattleGroupeType",
 		"battleType": "FLAG",
 		"mediumShipSize": 0,
 		"lightShipSize": 1,
@@ -92,14 +448,24 @@
    "thrust": 10,
    "hull": 4,
    "a": "4",
-   "pd": 5,
+   "pd": 3,
    "gmin": 1,
    "gmax": 4,
    "t": "L",
    "faction": "UCM",
    "pts": 30,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "LIGHTSHIP"
+   "shipType": "LIGHTSHIP",
+   "specials": [{
+   			"id": 1
+   		}
+   ],
+   "weapons": [{
+   			"id": 1
+   		}, {
+   			"id": 2
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -109,14 +475,26 @@
    "thrust": 10,
    "hull": 4,
    "a": "4",
-   "pd": 4,
+   "pd": 3,
    "gmin": 1,
    "gmax": 2,
    "t": "L",
    "faction": "UCM",
    "pts": 35,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "LIGHTSHIP"
+   "shipType": "LIGHTSHIP",
+   "specials": [{
+   			"id": 3
+   		}, {
+   			"id": 4
+   		}
+   ],
+   "weapons": [{
+   			"id": 1
+   		}, {
+   			"id": 2
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -133,7 +511,26 @@
    "faction": "UCM",
    "pts": 25,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "LIGHTSHIP"
+   "shipType": "LIGHTSHIP",   
+   "specials": [{
+   			"id": 5
+   		}, {
+   			"id": 6
+   		}, {
+   			"id": 7
+   		}
+   ],
+   "weapons": [{
+   			"id": 1
+   		}, {
+   			"id": 2
+   		}
+   ],
+   "loads": [
+   		{
+   			"id": 5
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -150,7 +547,15 @@
    "faction": "UCM",
    "pts": 45,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "LIGHTSHIP"
+   "shipType": "LIGHTSHIP",
+   "specials": [
+   ],
+   "weapons": [{
+   			"id": 1
+   		}, {
+   			"id": 3
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -167,7 +572,15 @@
    "faction": "UCM",
    "pts": 35,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "LIGHTSHIP"
+   "shipType": "LIGHTSHIP",  
+   "specials": [
+   ],
+   "weapons": [{
+   			"id": 15
+   		}, {
+   			"id": 2
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -184,7 +597,15 @@
    "faction": "UCM",
    "pts": 80,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "MEDIUMSHIP"
+   "shipType": "MEDIUMSHIP",
+   "specials": [
+   ],
+   "weapons": [{
+   			"id": 4
+   		}, {
+   			"id": 2
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -201,7 +622,15 @@
    "faction": "UCM",
    "pts": 85,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "MEDIUMSHIP"
+   "shipType": "MEDIUMSHIP",
+   "specials": [
+   ],
+   "weapons": [{
+   			"id": 4
+   		}, {
+   			"id": 2
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -218,7 +647,22 @@
    "faction": "UCM",
    "pts": 100,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "MEDIUMSHIP"
+   "shipType": "MEDIUMSHIP",
+   "specials": [
+   ],
+   "weapons": [
+   		{
+   			"id": 6
+   		},
+   		{
+   			"id": 7
+   		},
+   		{
+   			"id": 4
+   		}, {
+   			"id": 8
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -235,7 +679,22 @@
    "faction": "UCM",
    "pts": 95,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "MEDIUMSHIP"
+   "shipType": "MEDIUMSHIP",
+   "specials": [
+   ],
+   "weapons": [
+   		{
+   			"id": 6
+   		},
+   		{
+   			"id": 7
+   		},
+   		{
+   			"id": 5
+   		}, {
+   			"id": 8
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -252,7 +711,22 @@
    "faction": "UCM",
    "pts": 75,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "MEDIUMSHIP"
+   "shipType": "MEDIUMSHIP",
+      "specials": [
+   ],
+   "weapons": [
+   		{
+   			"id": 6
+   		},
+   		{
+   			"id": 7
+   		},
+   		{
+   			"id": 9
+   		}, {
+   			"id": 8
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -269,7 +743,30 @@
    "faction": "UCM",
    "pts": 150,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "MEDIUMSHIP"
+   "shipType": "MEDIUMSHIP",
+   "specials": [{
+   			"id": 6
+   		},
+   		{
+   			"id": 4
+   		}
+   ],
+   "weapons": [
+   		{
+   			"id": 6
+   		},
+   		{
+   			"id": 7
+   		},
+   		{
+   			"id": 8
+   		}
+   ],
+   "loads": [
+   		{
+   			"id": 4
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -286,7 +783,27 @@
    "faction": "UCM",
    "pts": 125,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "MEDIUMSHIP"
+   "shipType": "MEDIUMSHIP",
+   "specials": [{
+   			"id": 6
+   		},
+   		{
+   			"id": 4
+   		}
+   ],
+   "weapons": [
+   		{
+   			"id": 5
+   		},
+   		{
+   			"id": 8
+   		}
+   ],
+   "loads": [
+   		{
+   			"id": 2
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -303,7 +820,26 @@
    "faction": "UCM",
    "pts": 160,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "HEAVYSHIP"
+   "shipType": "HEAVYSHIP",
+   "specials": [
+   ],
+   "weapons": [   		
+   		{
+   			"id": 6
+   		},   		
+   		{
+   			"id": 7
+   		},
+   		{
+   			"id": 4
+   		},   		
+   		{
+   			"id": 4
+   		},
+   		{
+   			"id": 8
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -320,7 +856,26 @@
    "faction": "UCM",
    "pts": 145,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "HEAVYSHIP"
+   "shipType": "HEAVYSHIP",
+   "specials": [
+   ],
+   "weapons": [   		
+   		{
+   			"id": 6
+   		},   		
+   		{
+   			"id": 7
+   		},
+   		{
+   			"id": 5
+   		},   		
+   		{
+   			"id": 5
+   		},
+   		{
+   			"id": 8
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -337,7 +892,23 @@
    "faction": "UCM",
    "pts": 180,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "HEAVYSHIP"
+   "shipType": "HEAVYSHIP",
+   "specials": [
+   ],
+   "weapons": [   		
+   		{
+   			"id": 12
+   		},   		
+   		{
+   			"id": 13
+   		},
+   		{
+   			"id": 10
+   		},
+   		{
+   			"id": 8
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -354,7 +925,33 @@
    "faction": "UCM",
    "pts": 200,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "HEAVYSHIP"
+   "shipType": "HEAVYSHIP",
+   "specials": [{
+   			"id": 6
+   		}
+   ],
+   "weapons": [   		
+   		{
+   			"id": 6
+   		},   		
+   		{
+   			"id": 7
+   		},
+   		{
+   			"id": 4
+   		},   		
+   		{
+   			"id": 4
+   		},
+   		{
+   			"id": 8
+   		}
+   ],
+   "loads": [
+   		{
+   			"id": 2
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -371,7 +968,26 @@
    "faction": "UCM",
    "pts": 240,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "SUPERSHIP"
+   "shipType": "SUPERSHIP",
+   "specials": [
+   ],
+   "weapons": [   		
+   		{
+   			"id": 12
+   		},   		
+   		{
+   			"id": 13
+   		},
+   		{
+   			"id": 14
+   		},   		
+   		{
+   			"id": 5
+   		},
+   		{
+   			"id": 11
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",
@@ -388,7 +1004,28 @@
    "faction": "UCM",
    "pts": 255,
    "factionLogoURL": "ucm_25.jpg",
-   "shipType": "SUPERSHIP"
+   "shipType": "SUPERSHIP",
+   "specials": [
+   ],
+   "weapons": [   		
+   		{
+   			"id": 12
+   		},   		
+   		{
+   			"id": 13
+   		},
+   		{
+   			"id": 8
+   		}
+   ],
+   "loads": [
+   		{
+   			"id": 3
+   		},   		
+   		{
+   			"id": 1
+   		}
+   ]
  },
  {
    "_class": "de.mlo.model.Ship",

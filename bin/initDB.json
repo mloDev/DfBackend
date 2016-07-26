@@ -252,7 +252,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic turret III",
+   "name": "Generic turret III",
    "lock": 3,
    "attack": "4",
    "damage": 1,
@@ -260,7 +260,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic laser I",
+   "name": "Generic laser I",
    "lock": 3,
    "attack": "2",
    "damage": 1,
@@ -269,7 +269,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic turret IV",
+   "name": "Generic turret IV",
    "lock": 4,
    "attack": "2",
    "damage": 1,
@@ -277,7 +277,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic turret IV",
+   "name": "Generic turret IV",
    "lock": 4,
    "attack": "2",
    "damage": 1,
@@ -285,7 +285,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic missile bays I ",
+   "name": "Generic missile bays I",
    "lock": 4,
    "attack": "D6+1",
    "damage": 1,
@@ -296,7 +296,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic turret V",
+   "name": "Generic turret V",
    "lock": 2,
    "attack": "3",
    "damage": 1,
@@ -305,7 +305,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic laser II",
+   "name": "Generic laser II",
    "lock": 3,
    "attack": "4",
    "damage": 1,
@@ -314,7 +314,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic missel bays III",
+   "name": "Generic missel bays III",
    "lock": 3,
    "attack": "D6+4",
    "damage": 1,
@@ -325,7 +325,7 @@
  }, 
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic turret IV",
+   "name": "Generic turret IV",
    "lock": 4,
    "attack": "4",
    "damage": 1,
@@ -333,7 +333,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic turret IV",
+   "name": "Generic turret IV",
    "lock": 4,
    "attack": "4",
    "damage": 1,
@@ -341,14 +341,14 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic turret III",
+   "name": "Generic turret III",
    "lock": 3,
    "attack": "6",
    "damage": 1,
    "arc": "F/S"
  },{
    "_class": "de.mlo.model.Weapon",
-   "name": ""Generic turret I",
+   "name": "Generic turret I",
    "lock": 4,
    "attack": "4",
    "damage": 1,

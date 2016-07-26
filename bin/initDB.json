@@ -36,7 +36,7 @@
  {
    "_class": "de.mlo.model.Special",
    "@id": 8,
-   "name": "BURNTHROUGH (6)"
+   "name": "BURNTHROUGH(6)"
  },
  {
    "_class": "de.mlo.model.Special",
@@ -66,7 +66,7 @@
  {
    "_class": "de.mlo.model.Special",
    "@id": 14,
-   "name": "BURNTHROUGH (3)"
+   "name": "BURNTHROUGH(3)"
  },
  {
    "_class": "de.mlo.model.Special",
@@ -101,7 +101,7 @@
  {
    "_class": "de.mlo.model.Special",
    "@id": 21,
-   "name": "CALIBRE (L)"
+   "name": "CALIBRE(L)"
  },
  {
    "_class": "de.mlo.model.Special",
@@ -111,7 +111,7 @@
  {
    "_class": "de.mlo.model.Special",
    "@id": 23,
-   "name": "CALIBRE (H&S)"
+   "name": "CALIBRE(H&S)"
  },
  {
    "_class": "de.mlo.model.Special",
@@ -156,7 +156,7 @@
  {
    "_class": "de.mlo.model.Special",
    "@id": 32,
-   "name": "CLOSE ACTION (BEAM)"
+   "name": "CLOSE ACTION(BEAM)"
  },
  {
    "_class": "de.mlo.model.Special",
@@ -222,7 +222,7 @@
 	]
 },{
    "_class": "de.mlo.model.Weapon",
-   "name": "Light mass driver turret",
+   "name": "Generic turret I",
    "lock": 4,
    "attack": "1",
    "damage": 1,
@@ -230,7 +230,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Barracuda missile bays",
+   "name": "Generic missile bays I",
    "lock": 4,
    "attack": "2",
    "damage": 1,
@@ -241,7 +241,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Piranha missel turrets",
+   "name": "Generic turret II",
    "lock": 4,
    "attack": "D6+4",
    "damage": 1,
@@ -252,7 +252,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Heavy mass driver turret",
+   "name": ""Generic turret III",
    "lock": 3,
    "attack": "4",
    "damage": 1,
@@ -260,7 +260,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Cobra heavy laser",
+   "name": ""Generic laser I",
    "lock": 3,
    "attack": "2",
    "damage": 1,
@@ -269,7 +269,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Medium mass driver turret",
+   "name": ""Generic turret IV",
    "lock": 4,
    "attack": "2",
    "damage": 1,
@@ -277,7 +277,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Medium mass driver turret",
+   "name": ""Generic turret IV",
    "lock": 4,
    "attack": "2",
    "damage": 1,
@@ -285,7 +285,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Shark missel bays",
+   "name": ""Generic missile bays I ",
    "lock": 4,
    "attack": "D6+1",
    "damage": 1,
@@ -296,7 +296,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Bombard turrets",
+   "name": ""Generic turret V",
    "lock": 2,
    "attack": "3",
    "damage": 1,
@@ -305,7 +305,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Viper super-heavy laser",
+   "name": ""Generic laser II",
    "lock": 3,
    "attack": "4",
    "damage": 1,
@@ -314,9 +314,9 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Swordfish missel bays",
+   "name": ""Generic missel bays III",
    "lock": 3,
-   "attack": "D6+44",
+   "attack": "D6+4",
    "damage": 1,
    "arc": "F/S/R",
    "specials": [{	
@@ -325,7 +325,7 @@
  }, 
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Medium mass driver turret",
+   "name": ""Generic turret IV",
    "lock": 4,
    "attack": "4",
    "damage": 1,
@@ -333,7 +333,7 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Medium mass driver turret",
+   "name": ""Generic turret IV",
    "lock": 4,
    "attack": "4",
    "damage": 1,
@@ -341,14 +341,14 @@
  },
  {
    "_class": "de.mlo.model.Weapon",
-   "name": "Heavy mass driver turret",
+   "name": ""Generic turret III",
    "lock": 3,
    "attack": "6",
    "damage": 1,
    "arc": "F/S"
  },{
    "_class": "de.mlo.model.Weapon",
-   "name": "Light mass driver turret",
+   "name": ""Generic turret I",
    "lock": 4,
    "attack": "4",
    "damage": 1,
@@ -448,7 +448,7 @@
    "thrust": 10,
    "hull": 4,
    "a": "4",
-   "pd": 5,
+   "pd": 3,
    "gmin": 1,
    "gmax": 4,
    "t": "L",

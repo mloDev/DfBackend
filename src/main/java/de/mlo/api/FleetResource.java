@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,8 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import de.mlo.Repository.BattlegroupeRepository;
 import de.mlo.Repository.FleetRepository;
-import de.mlo.model.Battlegroupe;
+import de.mlo.enums.Faction;
+import de.mlo.model.BattleGroup;
 import de.mlo.model.Fleet;
+import de.mlo.model.Ship;
 
 @RestController
 public class FleetResource {
@@ -33,7 +36,7 @@ public class FleetResource {
 	
 	@RequestMapping(value = "/api/fleet", method = RequestMethod.POST) 
 	public ResponseEntity<Fleet> saveFleet(@RequestBody Fleet fleet) {
-		List<Battlegroupe> battleGroupe = new ArrayList<Battlegroupe>();
+		List<BattleGroup> battleGroupe = new ArrayList<BattleGroup>();
 		battleGroupe.addAll(fleet.getLineBattlegroupes());
 		battleGroupe.addAll(fleet.getPathfinderBattlegroupes());
 		battleGroupe.addAll(fleet.getFlagBattlegroupes());
@@ -49,7 +52,7 @@ public class FleetResource {
 	
 	@RequestMapping(value = "/api/fleet/{id}", method = RequestMethod.PUT) 
 	public @ResponseBody ResponseEntity<Fleet> updateFleet(@RequestBody Fleet fleet) {
-		List<Battlegroupe> battleGroupe = new ArrayList<Battlegroupe>();
+		List<BattleGroup> battleGroupe = new ArrayList<BattleGroup>();
 		battleGroupe.addAll(fleet.getLineBattlegroupes());
 		battleGroupe.addAll(fleet.getPathfinderBattlegroupes());
 		battleGroupe.addAll(fleet.getFlagBattlegroupes());
@@ -61,5 +64,10 @@ public class FleetResource {
 		}
 		fleetRepo.saveAndFlush(fleet);
 		return new ResponseEntity<Fleet>(fleet, HttpStatus.OK);
+	}
+	
+	@RequestMapping(value= "/api/fleetByUserId/{userId}", method = RequestMethod.GET)
+	public List<Fleet> getFleetsByUserId(@PathVariable String userId) {
+		return fleetRepo.getByUserId(userId);
 	}
 }

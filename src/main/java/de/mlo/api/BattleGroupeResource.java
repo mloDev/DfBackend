@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import de.mlo.Repository.BattleGroupeTypeRepository;
 import de.mlo.Repository.BattlegroupeRepository;
-import de.mlo.model.BattleGroupeType;
-import de.mlo.model.Battlegroupe;
+import de.mlo.model.BattleGroupType;
+import de.mlo.model.BattleGroup;
 
 @RestController
 public class BattleGroupeResource {
@@ -26,31 +26,31 @@ public class BattleGroupeResource {
 	BattleGroupeTypeRepository battleTypeRepo;
 	
 	@RequestMapping(value =  "/api/battlegroupe", method = RequestMethod.GET)
-	public List<Battlegroupe> getAllBattleGroupes() {
+	public List<BattleGroup> getAllBattleGroupes() {
 		return battleRepo.findAll();
 	}
 	
 	@RequestMapping(value =  "/api/battlegroupeType", method = RequestMethod.GET)
-	public List<BattleGroupeType> getAllBattleGroupeTypes() {
+	public List<BattleGroupType> getAllBattleGroupeTypes() {
 		return battleTypeRepo.findAll();
 	}
 	
 	@RequestMapping(value = "/api/battlegroupe", method = RequestMethod.POST) 
-	public ResponseEntity<Battlegroupe> saveBattleGroupe(@RequestBody Battlegroupe battleGroupe) {
+	public ResponseEntity<BattleGroup> saveBattleGroupe(@RequestBody BattleGroup battleGroupe) {
 		
 		if (battleGroupe != null) {
 		}
 		battleRepo.save(battleGroupe);
-		return new ResponseEntity<Battlegroupe>(battleGroupe, HttpStatus.OK);
+		return new ResponseEntity<BattleGroup>(battleGroupe, HttpStatus.OK);
 	}
 	
 	@RequestMapping(value = "/api/battlegroupe/{id}", method = RequestMethod.PUT) 
-	public @ResponseBody ResponseEntity<Battlegroupe> updateBattleGroupe(@RequestBody Battlegroupe battleGroupe) {
+	public @ResponseBody ResponseEntity<BattleGroup> updateBattleGroupe(@RequestBody BattleGroup battleGroupe) {
 		
 		if (battleGroupe != null) {
 		}
 		battleRepo.saveAndFlush(battleGroupe);
-		return new ResponseEntity<Battlegroupe>(battleGroupe, HttpStatus.OK);
+		return new ResponseEntity<BattleGroup>(battleGroupe, HttpStatus.OK);
 	}
 }
 

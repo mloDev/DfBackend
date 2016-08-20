@@ -12,7 +12,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-public class BattleGroupeType {
+public class BattleGroupType {
 	
 	@Id
 	@GeneratedValue

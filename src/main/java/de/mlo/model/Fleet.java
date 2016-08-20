@@ -1,6 +1,5 @@
 package de.mlo.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -8,9 +7,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -20,7 +19,7 @@ import lombok.Getter;
 import lombok.Setter;
 @Entity
 public class Fleet {
-	
+
 	@Id
 	@GeneratedValue
 	@Getter
@@ -32,13 +31,29 @@ public class Fleet {
 	@Setter
 	private String name;
 	
+	@Column
+	@Getter
+	@Setter
+	private int totalPoints;
+	
+	@Column
+	@Getter
+	@Setter
+	private int maxPoints;
+	
+	@Column
+	@Getter
+	@Setter
+	private String userId;
+	
 	@Enumerated(EnumType.STRING)
 	@Column
 	@Getter
 	@Setter
 	private Faction faction;
 	
-	@OneToOne(mappedBy = "fleet")
+	@OneToOne
+	@JoinColumn(name = "fleet_gameSize" )
 	@Getter
 	@Setter
 	private GameSize gameSize;
@@ -46,62 +61,22 @@ public class Fleet {
 	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<Battlegroupe> flagBattlegroupes;
-	
-//	public void addFlagGroupe(FlagBattlegroupe flagGroupe) {
-//		if (flagGroupe != null) {
-//			if (flagBattlegroupes == null) {
-//				flagBattlegroupes = new ArrayList<FlagBattlegroupe>();          
-//		    }
-//		    flagBattlegroupes.add(flagGroupe);
-//		    flagGroupe.setFleet(this);
-//		 }
-//	}
+	private List<BattleGroup> flagBattlegroupes;
 	
 	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<Battlegroupe> vanguardBattlegroupes;
-	
-//	public void addVanguardGroupe(VanguardBattlegroupe vanguardGroupe) {
-//		if (vanguardGroupe != null) {
-//			if (vanguardBattlegroupes == null) {
-//				vanguardBattlegroupes = new ArrayList<VanguardBattlegroupe>();          
-//		    }
-//			vanguardBattlegroupes.add(vanguardGroupe);
-//			vanguardGroupe.setFleet(this);
-//		 }
-//	}
+	private List<BattleGroup> vanguardBattlegroupes;
 	
 	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<Battlegroupe> lineBattlegroupes;
-	
-//	public void addLineGroupe(LineBattlegroupe lineGroupe) {
-//		if (lineGroupe != null) {
-//			if (lineBattlegroupes == null) {
-//				lineBattlegroupes = new ArrayList<LineBattlegroupe>();          
-//		    }
-//			lineBattlegroupes.add(lineGroupe);
-//			lineGroupe.setFleet(this);
-//		 }
-//	}
+	private List<BattleGroup> lineBattlegroupes;
 	
 	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<Battlegroupe> pathfinderBattlegroupes;
-	
-//	public void addPathfinderGroupe(PathfinderBattlegroupe pathfinderGroupe) {
-//		if (pathfinderGroupe != null) {
-//			if (pathfinderBattlegroupes == null) {
-//				pathfinderBattlegroupes = new ArrayList<PathfinderBattlegroupe>();          
-//		    }
-//			pathfinderBattlegroupes.add(pathfinderGroupe);
-//			pathfinderGroupe.setFleet(this);
-//		 }
-//	}
+	private List<BattleGroup> pathfinderBattlegroupes;
 
 	
 }

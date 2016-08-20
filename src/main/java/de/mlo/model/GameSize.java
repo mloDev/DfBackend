@@ -78,8 +78,4 @@ public class GameSize {
 	@Getter
 	@Setter
 	private int maxPoints;
-	
-	@OneToOne
-    @JoinTable(name = "FLEET_ID")
-    private Fleet fleet;
 }

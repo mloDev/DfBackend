@@ -18,7 +18,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-public class Battlegroupe {
+public class BattleGroup {
 	
 	@Id
 	@GeneratedValue
@@ -27,10 +27,10 @@ public class Battlegroupe {
 	private int id;
 
 	@OneToOne
-	@JoinTable(name = "battlegrouptype_id")
+	@JoinColumn(name = "battlegrouptype_id")
 	@Getter
 	@Setter
-	private BattleGroupeType battleGroupeType;
+	private BattleGroupType battleGroupeType;
 	
     @ManyToMany
     @JoinTable(name = "battlegroup_lights")

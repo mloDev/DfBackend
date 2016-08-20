@@ -30,7 +30,7 @@ public class BattleGroup {
 	@JoinColumn(name = "battlegrouptype_id")
 	@Getter
 	@Setter
-	private BattleGroupType battleGroupeType;
+	private BattleGroupType battleGroupType;
 	
     @ManyToMany
     @JoinTable(name = "battlegroup_lights")

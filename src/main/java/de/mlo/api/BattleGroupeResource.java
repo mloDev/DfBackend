@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.mlo.Repository.BattleGroupeTypeRepository;
-import de.mlo.Repository.BattlegroupeRepository;
+import de.mlo.Repository.BattleGroupRepository;
+import de.mlo.Repository.BattleGroupTypeRepository;
 import de.mlo.model.BattleGroupType;
 import de.mlo.model.BattleGroup;
 
@@ -20,10 +20,10 @@ import de.mlo.model.BattleGroup;
 public class BattleGroupeResource {
 
 	@Autowired
-	BattlegroupeRepository battleRepo;
+	BattleGroupRepository battleRepo;
 	
 	@Autowired
-	BattleGroupeTypeRepository battleTypeRepo;
+	BattleGroupTypeRepository battleTypeRepo;
 	
 	@RequestMapping(value =  "/api/battlegroupe", method = RequestMethod.GET)
 	public List<BattleGroup> getAllBattleGroupes() {
@@ -31,7 +31,7 @@ public class BattleGroupeResource {
 	}
 	
 	@RequestMapping(value =  "/api/battlegroupeType", method = RequestMethod.GET)
-	public List<BattleGroupType> getAllBattleGroupeTypes() {
+	public List<BattleGroupType> getAllBattleGroupTypes() {
 		return battleTypeRepo.findAll();
 	}
 	

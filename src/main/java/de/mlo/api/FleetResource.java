@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.mlo.Repository.BattlegroupeRepository;
+import de.mlo.Repository.BattleGroupRepository;
 import de.mlo.Repository.FleetRepository;
 import de.mlo.enums.Faction;
 import de.mlo.model.BattleGroup;
@@ -27,7 +27,7 @@ public class FleetResource {
 	FleetRepository fleetRepo;
 	
 	@Autowired
-	BattlegroupeRepository battleRepo;
+	BattleGroupRepository battleRepo;
 
 	@RequestMapping(value =  "/api/fleet", method = RequestMethod.GET)
 	public List<Fleet> getAllFleets() {
@@ -36,14 +36,14 @@ public class FleetResource {
 	
 	@RequestMapping(value = "/api/fleet", method = RequestMethod.POST) 
 	public ResponseEntity<Fleet> saveFleet(@RequestBody Fleet fleet) {
-		List<BattleGroup> battleGroupe = new ArrayList<BattleGroup>();
-		battleGroupe.addAll(fleet.getLineBattlegroupes());
-		battleGroupe.addAll(fleet.getPathfinderBattlegroupes());
-		battleGroupe.addAll(fleet.getFlagBattlegroupes());
-		battleGroupe.addAll(fleet.getVanguardBattlegroupes());
+		List<BattleGroup> battleGroup = new ArrayList<BattleGroup>();
+		battleGroup.addAll(fleet.getLineBattlegroupes());
+		battleGroup.addAll(fleet.getPathfinderBattlegroupes());
+		battleGroup.addAll(fleet.getFlagBattlegroupes());
+		battleGroup.addAll(fleet.getVanguardBattlegroupes());
 		if ( fleet != null) {
-			for ( int i = 0; battleGroupe.size() > i; i++ ) {
-				battleRepo.save(battleGroupe.get(i));
+			for ( int i = 0; battleGroup.size() > i; i++ ) {
+				battleRepo.save(battleGroup.get(i));
 			}
 		}
 		fleetRepo.save(fleet);
@@ -52,14 +52,14 @@ public class FleetResource {
 	
 	@RequestMapping(value = "/api/fleet/{id}", method = RequestMethod.PUT) 
 	public @ResponseBody ResponseEntity<Fleet> updateFleet(@RequestBody Fleet fleet) {
-		List<BattleGroup> battleGroupe = new ArrayList<BattleGroup>();
-		battleGroupe.addAll(fleet.getLineBattlegroupes());
-		battleGroupe.addAll(fleet.getPathfinderBattlegroupes());
-		battleGroupe.addAll(fleet.getFlagBattlegroupes());
-		battleGroupe.addAll(fleet.getVanguardBattlegroupes());
+		List<BattleGroup> battleGroup = new ArrayList<BattleGroup>();
+		battleGroup.addAll(fleet.getLineBattlegroupes());
+		battleGroup.addAll(fleet.getPathfinderBattlegroupes());
+		battleGroup.addAll(fleet.getFlagBattlegroupes());
+		battleGroup.addAll(fleet.getVanguardBattlegroupes());
 		if ( fleet != null) {
-			for ( int i = 0; battleGroupe.size() > i; i++ ) {
-				battleRepo.saveAndFlush(battleGroupe.get(i));
+			for ( int i = 0; battleGroup.size() > i; i++ ) {
+				battleRepo.saveAndFlush(battleGroup.get(i));
 			}
 		}
 		fleetRepo.saveAndFlush(fleet);

@@ -30,7 +30,7 @@ public class BattleGroupeResource {
 		return battleRepo.findAll();
 	}
 	
-	@RequestMapping(value =  "/api/battlegroupeType", method = RequestMethod.GET)
+	@RequestMapping(value =  "/api/battleGroupType", method = RequestMethod.GET)
 	public List<BattleGroupType> getAllBattleGroupTypes() {
 		return battleTypeRepo.findAll();
 	}

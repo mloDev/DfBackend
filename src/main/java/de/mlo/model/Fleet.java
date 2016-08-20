@@ -61,22 +61,22 @@ public class Fleet {
 	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<BattleGroup> flagBattlegroupes;
+	private List<BattleGroup> flagBattleGroups;
 	
 	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<BattleGroup> vanguardBattlegroupes;
+	private List<BattleGroup> vanguardBattleGroups;
 	
 	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<BattleGroup> lineBattlegroupes;
+	private List<BattleGroup> lineBattleGroups;
 	
 	@OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	@Getter
 	@Setter
-	private List<BattleGroup> pathfinderBattlegroupes;
+	private List<BattleGroup> pathfinderBattleGroups;
 
 	
 }

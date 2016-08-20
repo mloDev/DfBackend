@@ -37,10 +37,10 @@ public class FleetResource {
 	@RequestMapping(value = "/api/fleet", method = RequestMethod.POST) 
 	public ResponseEntity<Fleet> saveFleet(@RequestBody Fleet fleet) {
 		List<BattleGroup> battleGroup = new ArrayList<BattleGroup>();
-		battleGroup.addAll(fleet.getLineBattlegroupes());
-		battleGroup.addAll(fleet.getPathfinderBattlegroupes());
-		battleGroup.addAll(fleet.getFlagBattlegroupes());
-		battleGroup.addAll(fleet.getVanguardBattlegroupes());
+		battleGroup.addAll(fleet.getLineBattleGroups());
+		battleGroup.addAll(fleet.getPathfinderBattleGroups());
+		battleGroup.addAll(fleet.getFlagBattleGroups());
+		battleGroup.addAll(fleet.getVanguardBattleGroups());
 		if ( fleet != null) {
 			for ( int i = 0; battleGroup.size() > i; i++ ) {
 				battleRepo.save(battleGroup.get(i));
@@ -53,10 +53,10 @@ public class FleetResource {
 	@RequestMapping(value = "/api/fleet/{id}", method = RequestMethod.PUT) 
 	public @ResponseBody ResponseEntity<Fleet> updateFleet(@RequestBody Fleet fleet) {
 		List<BattleGroup> battleGroup = new ArrayList<BattleGroup>();
-		battleGroup.addAll(fleet.getLineBattlegroupes());
-		battleGroup.addAll(fleet.getPathfinderBattlegroupes());
-		battleGroup.addAll(fleet.getFlagBattlegroupes());
-		battleGroup.addAll(fleet.getVanguardBattlegroupes());
+		battleGroup.addAll(fleet.getLineBattleGroups());
+		battleGroup.addAll(fleet.getPathfinderBattleGroups());
+		battleGroup.addAll(fleet.getFlagBattleGroups());
+		battleGroup.addAll(fleet.getVanguardBattleGroups());
 		if ( fleet != null) {
 			for ( int i = 0; battleGroup.size() > i; i++ ) {
 				battleRepo.saveAndFlush(battleGroup.get(i));
